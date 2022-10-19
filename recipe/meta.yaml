@@ -1,4 +1,4 @@
-{% set version = '1.2.4' %}
+{% set version = "1.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/minqa_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/minqa/minqa_{{ version }}.tar.gz
-  sha256: cfa193a4a9c55cb08f3faf4ab09c11b70412523767f19894e4eafc6e94cccd0c
+  sha256: 9b83562390990d04b2c61b63ac9a7c9ecab0d35c460d232596e3c73bdc89f4be
 
 build:
-  merge_build_host: True  # [win]
-  number: 1007
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,11 +50,10 @@ test:
 about:
   home: http://optimizer.r-forge.r-project.org
   license: GPL-2.0-only
-  summary: Derivative-free optimization by quadratic approximation based on an interface to Fortran
-    implementations by M. J. D. Powell.
+  summary: Derivative-free optimization by quadratic approximation based on an interface to Fortran implementations by M. J. D. Powell.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
