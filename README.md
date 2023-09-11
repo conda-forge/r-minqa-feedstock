@@ -3,6 +3,7 @@ About r-minqa-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-minqa-feedstock/blob/main/LICENSE.txt)
 
+
 About r-minqa
 -------------
 
@@ -11,6 +12,7 @@ Home: http://optimizer.r-forge.r-project.org
 Package license: GPL-2.0-only
 
 Summary: Derivative-free optimization by quadratic approximation based on an interface to Fortran implementations by M. J. D. Powell.
+
 About r-minqa
 -------------
 
