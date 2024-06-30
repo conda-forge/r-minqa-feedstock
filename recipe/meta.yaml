@@ -1,6 +1,5 @@
 {% set version = "1.2.7" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-minqa
@@ -13,8 +12,7 @@ source:
   sha256: 76f3459d1ed860d5095b1d89d41628fc7187e72506cf48f073e15724d9e52fe2
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -41,7 +39,6 @@ requirements:
     - r-rcpp >=0.9.10
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.9.10
 
 test:
