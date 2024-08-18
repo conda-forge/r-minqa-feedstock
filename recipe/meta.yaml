@@ -1,4 +1,4 @@
-{% set version = "1.2.7" %}
+{% set version = "1.2.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/minqa_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/minqa/minqa_{{ version }}.tar.gz
-  sha256: 76f3459d1ed860d5095b1d89d41628fc7187e72506cf48f073e15724d9e52fe2
+  sha256: 5941e4b9b01978fc6d9fe24e6ca60cca66883fe9fa6ff3cbfa32aa1ac9db5467
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
